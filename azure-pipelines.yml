@@ -57,3 +57,7 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+
+- powershell: "Set-Content -path ./test.txt -value 'Some Test Log'"
+  displayName: 'Testing the waters'
+  workingDirectory: "."
