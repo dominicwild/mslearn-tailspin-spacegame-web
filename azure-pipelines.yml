@@ -58,6 +58,6 @@ steps:
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
 
-- powershell: "Set-Content -path ./test.txt -value 'Some Test Log'"
+- powershell: "Set-Content -path test.txt -value 'Some Test Log'"
   displayName: 'Testing the waters'
-  workingDirectory: "."
+  workingDirectory: "Tailspin.SpaceGame.Web"
